@@ -1,4 +1,4 @@
-module github.com/ajvb/kala
+github.com/nmstone/kala
 
 go 1.13
 
