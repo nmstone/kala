@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ajvb/kala/job"
+	"github.com/nmstone/kala/job"
 
 	"testing"
 
@@ -65,7 +65,7 @@ func (a *ApiTestSuite) TestHandleAddJob() {
 	cache := job.NewMockCache()
 	jobMap := generateNewJobMap()
 	jobMap["owner"] = ""
-	defaultOwner := "aj+tester@ajvb.me"
+	defaultOwner := "aj+tester@nmstone.me"
 	handler := HandleAddJob(cache, defaultOwner)
 
 	jsonJobMap, err := json.Marshal(jobMap)
@@ -89,7 +89,7 @@ func (a *ApiTestSuite) TestHandleAddRemoteJob() {
 	cache := job.NewMockCache()
 	jobMap := generateNewRemoteJobMap()
 	jobMap["owner"] = ""
-	defaultOwner := "aj+tester@ajvb.me"
+	defaultOwner := "aj+tester@nmstone.me"
 	handler := HandleAddJob(cache, defaultOwner)
 
 	jsonJobMap, err := json.Marshal(jobMap)

@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ajvb/kala/api"
-	"github.com/ajvb/kala/client"
-	"github.com/ajvb/kala/job"
+	"github.com/nmstone/kala/api"
+	"github.com/nmstone/kala/client"
+	"github.com/nmstone/kala/job"
 	"github.com/mixer/clock"
 )
 
