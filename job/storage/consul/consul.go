@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/ajvb/kala/job"
+	"github.com/nmstone/kala/job"
 
 	"github.com/hashicorp/consul/api"
 
