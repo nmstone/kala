@@ -204,7 +204,9 @@ func (j *Job) Init(cache JobCache) error {
 		log.Errorf("Error occurred when generating uuid: %s", err)
 		return err
 	}
-	j.Id = u4.String()
+	if (j.Id == "") {
+		j.Id = u4.String()
+	}
 
 	// Add Job to the cache.
 	j.lock.Unlock()
